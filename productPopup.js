@@ -176,21 +176,6 @@
     trackSelectionChanges("#SingleOptionSelector-0");
     trackSelectionChanges("#SingleOptionSelector-1");
 
-    /*----------Repetitive code
-    const selectSize = document.querySelector("#SingleOptionSelector-0");
-    const selectColor = document.querySelector("#SingleOptionSelector-1");
-
-
-    // Track size selection changes
-    if (selectSize) {
-        selectSize.addEventListener("change", updateSelected);
-    }
-
-    // Track color selection changes
-    if (selectColor) {
-        selectColor.addEventListener("change", updateSelected);
-    }
-    ----------*/
 
     // Update quantity
     function updateQuantity(change) {
@@ -216,22 +201,6 @@
     handleQuantityChange(increaseBtn, 1);  // Increase the quantity
     handleQuantityChange(decreaseBtn, -1); // Decrease the quantity
 
-    /*---------Repetitive code
-    // Clicking the increase button.
-    if (increaseBtn) {
-        increaseBtn.addEventListener("click", function() {
-            updateQuantity(1); // increease
-        });
-    }
-
-    // Clicking the decrease button.
-    if (decreaseBtn) {
-        decreaseBtn.addEventListener("click", function() {
-            updateQuantity(-1); // decrease
-        });
-    }
-
-    --------*/
 
     // Add to Cart button click functionality.
     document.getElementById("popup-add-to-cart").addEventListener("click", function () {
@@ -248,13 +217,10 @@
       }
     });
 
-    // Modal'ı veya popup kapatma
+    //Close the modal or popup when user clicks the close button
     const closeCustomModal = document.getElementById("closeCustomModal");
     const closePopup = document.getElementById("closePopup");
 
-    /*closePopup.addEventListener("click",()=>{
-      popup.remove();
-    })*/
 
     function closeSelection(button, onCloseAction) {
         if (!button) return;
@@ -268,23 +234,6 @@
     closeSelection(closePopup, () => {
         popup.remove();
     });
-
-    /*// Modal'ı veya popup kapatma
-    function closeSelection(close) {
-      if (close == closeCustomModal) {
-          close.addEventListener("click",function () {
-          modal.style.display = "none";
-          });
-      }
-      else{
-          close.addEventListener("click",function () {
-          popup.remove();
-          })
-      }
-    }*/
-    
-    //closeSelection(closeCustomModal);
-    //closeSelection(closePopup);
 
 
     // ---BONUS---
