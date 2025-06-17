@@ -205,20 +205,6 @@
     }
     updateCartStatusAndTotal();
 
-    //Remove butonlarına tıklama----sayfa yenileniyor
-    /*
-    popup.addEventListener("click", function (e) {
-        const removeBtn = e.target.closest(".remove-btn");
-        if (removeBtn) {
-            const href = removeBtn.getAttribute("data-href");
-            if (href && href !== "#") {
-                window.location.href = href;
-            } else {
-                alert("Remove bağlantısı bulunamadı.");
-            }
-        }
-    });
-    */
 
     //Select Quantity
     document.addEventListener("click", function (e) {
